@@ -26,7 +26,7 @@ public class BuilderObject {
 	/**
 	 * The private ctor ensures only the Builder can create BuilderObjects.
 	 * Also, this is an atomic operation in terms of thread-safety, which
-	 * can be
+	 * ensures that the object is fully initialized.
 	 */
 	private BuilderObject(Builder builder) {
 		this.name = builder.name;
